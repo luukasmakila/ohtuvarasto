@@ -59,7 +59,7 @@ class TestVarasto(unittest.TestCase):
         self.assertEqual(self.varasto.lisaa_varastoon(-1), None)
     
     def test_virheellinen_otto_varastosta(self):
-        self.assertEqual(self.varasto.ota_varastosta(-1), -1)
+        self.assertEqual(self.varasto.ota_varastosta(-1), 0)
 
     def test_print_varasto(self):
         tuloste = str(self.varasto)
